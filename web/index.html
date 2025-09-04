@@ -8,11 +8,11 @@
     <style>
         body { 
             font-family: 'Helvetica Neue', sans-serif; 
-            padding-top: 56px; /* Fixed navbar height */
+            padding-top: 56px;
         }
         .hero {
             height: 80vh;
-            background: url('https://picsum.photos/1920/1080?grayscale&blur=2') no-repeat center center;
+            background: url('main.jpeg') no-repeat center center;
             background-size: cover;
             color: white;
             display: flex;
@@ -29,31 +29,13 @@
             font-size: 1.5rem;
             text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
         }
-        .section-title { 
-            text-align: center; 
-            margin-bottom: 4rem; 
-            font-weight: 300; 
-            font-size: 2.8rem; 
-            letter-spacing: 1px;
-        }
-        .product-card { 
-            margin-bottom: 2rem; 
-            border: none;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
-        }
-        .product-card:hover {
-            transform: translateY(-10px);
-        }
         .footer { 
             background-color: #f8f9fa; 
             padding: 4rem 0; 
+            margin-top: 5rem;
         }
         .navbar-brand {
             font-weight: bold;
-        }
-        section {
-            padding: 6rem 0;
         }
     </style>
 </head>
@@ -62,16 +44,17 @@
     <!-- 네비게이션 바 -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
         <div class="container">
-            <a class="navbar-brand" href="#home">espero</a>
+            <a class="navbar-brand" href="index.html">espero</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#home">홈</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">브랜드 스토리</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#products">제품</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">연락처</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">홈</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">브랜드 스토리</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html">제품 소개</a></li>
+                    <li class="nav-item"><a class="nav-link" href="process.html">제작 방법</a></li>
+                    <li class="nav-item"><a class="nav-link" href="health_info.html">건강 정보</a></li>
                 </ul>
             </div>
         </div>
@@ -84,71 +67,16 @@
             <p class="lead">당신의 모든 걸음을 위한 과학. 기능성 수제화.</p>
         </div>
     </header>
-
-    <!-- 브랜드 스토리 -->
-    <section id="about">
-        <div class="container">
-            <h2 class="section-title">Brand Story</h2>
-            <div class="row">
-                <div class="col-md-8 mx-auto text-center">
-                    <p class="lead">espero는 '희망하다'라는 의미의 스페인어에서 유래했습니다. 우리는 발이 편안할 때 더 나은 일상을 경험할 수 있다는 희망을 담아 신발을 만듭니다.</p>
-                    <p>수십 년 경력의 장인이 최상급 소재를 사용하여 모든 공정을 수작업으로 진행합니다. 발의 구조를 과학적으로 분석하여 디자인된 'espero'는 최상의 편안함과 세련된 스타일을 동시에 제공합니다.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 제품 소개 -->
-    <section id="products" class="bg-light">
-         <div class="container">
-            <h2 class="section-title">Our Products</h2>
-            <div class="row">
-                <!-- Product 1 -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="card product-card">
-                        <img src="https://picsum.photos/400/300?random=1" class="card-img-top" alt="제품 이미지">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Espero Classic Loafer</h5>
-                            <p class="card-text">클래식한 디자인과 편안함의 조화.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Product 2 -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="card product-card">
-                        <img src="https://picsum.photos/400/300?random=2" class="card-img-top" alt="제품 이미지">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Active Walker Derby</h5>
-                            <p class="card-text">활동적인 당신을 위한 최고의 선택.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Product 3 -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="card product-card">
-                        <img src="https://picsum.photos/400/300?random=3" class="card-img-top" alt="제품 이미지">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Comfort Chelsea Boot</h5>
-                            <p class="card-text">스타일과 기능성을 모두 갖춘 부츠.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    
+    <div class="container text-center my-5 py-5">
+        <h2>편안함과 스타일을 모두 만족시키는 단 하나의 신발</h2>
+        <p class="lead text-muted">Espero는 당신의 발이 가장 편안하게 느낄 수 있는 순간을 연구합니다.</p>
+        <a href="about.html" class="btn btn-dark btn-lg mt-3">브랜드 스토리 더보기</a>
+    </div>
 
     <!-- 푸터 -->
-    <footer id="contact" class="footer">
+    <footer class="footer">
         <div class="container text-center">
-            <h3>Contact Us</h3>
-            <p class="lead">espero에 대해 더 궁금한 점이 있으신가요?</p>
-            <p>문의: contact@espero.com</p>
-            <p>
-                <a href="#" class="text-dark mx-2">Facebook</a> | 
-                <a href="#" class="text-dark mx-2">Instagram</a> | 
-                <a href="#" class="text-dark mx-2">Twitter</a>
-            </p>
-            <hr class="my-4">
             <p class="text-muted">&copy; 2025 espero. All Rights Reserved.</p>
         </div>
     </footer>
